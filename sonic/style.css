@@ -3,7 +3,7 @@
   padding: 0;
 }
 body {
-  background-color: rgb(143, 143, 235);
+  background-color: #003c72;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -63,4 +63,16 @@ body {
   to {
     background-position: 132px;
   }
+}
+
+.fast {
+  border: 0;
+  background-color: #59c1e8;
+  padding: 10px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.fast:active {
+  background-color: white;
 }
