@@ -12,6 +12,6 @@ function Timer(){
 
 fast.addEventListener("click", function() {
 y *= 1.10
-
 })
+
 Timer();
