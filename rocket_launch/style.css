@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #2b2929;
+}
+
+.rocket_launch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 200vh;
+}
+
+.antenna {
+    background-color: #000000;
+    padding: 100px 1px 0;
+    border-radius: 5px 5px 0 0;
+}
+
+.nose {
+    background-color: #720026;
+    height: 200px;
+    width: 200px;
+    border-radius: 50% 50% 50% 50% / 100% 100% 0% 0%;
+    z-index: 1;
+}
+
+.body::before {
+    content: "";
+    background-color: #52001b;
+    height: 10px;
+    width: 100%;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    height: 500px;
+    width: 200px;
+}
+
+.test {
+    display: flex;
+}
+
+.wing_left {
+    height: 200px;
+    width: 200px;
+}
+
+.porthole {
+    background-color: #4ba3c3;
+    margin: 30% auto 0;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: solid 5px #720026;
+    box-shadow: inset 10px 10px #25505f;
+}
+
+.reactor::before {
+    content: "";
+    height: 0;
+    width: 0;
+    border-top: 50px solid #2b2929;
+    border-right: 30px solid transparent;
+}
+
+.reactor {
+    display: flex;
+    justify-content: space-between;
+    background-color: #101a3f;
+    height: 50px;
+    width: 150px;
+}
+
+.reactor::after {
+    content: "";
+    height: 0;
+    width: 0;
+    border-top: 50px solid #2b2929;
+    border-left: 30px solid transparent;
+}
+
+.fire {
+    display: flex;
+    justify-content: center;
+    background-color: #f3752b;
+    height: 50px;
+    width: 75px;
+    border-radius: 20% 20% 0 0 / 50%;
+}
+
+.fire::after {
+    content: "";
+    background-color: #f38e53;
+    height: 100%;
+    width: 50%;
+    border-radius: 20% 20% 0 0 / 50%;
+}
+
+.fire2 {
+    display: flex;
+    justify-content: center;
+    background-color: #f3752b;
+    height: 100px;
+    width: 75px;
+    border-radius: 0 0 100% 100%;
+}
+
+.fire2::after {
+    content: "";
+    background-color: #f38e53;
+    height: 80%;
+    width: 50%;
+    border-radius: 0 0 100% 100%;
+}
