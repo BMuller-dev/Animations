@@ -167,7 +167,7 @@ a:active {
 }
 
 .start {
-    animation: start 1s infinite alternate;
+    animation: start 1s linear infinite alternate;
 }
 
 @keyframes start {
@@ -178,7 +178,6 @@ a:active {
         transform: rotateZ(5deg);
     }
 }
-
 
 @keyframes light {
     50% {
