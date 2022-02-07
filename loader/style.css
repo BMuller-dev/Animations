@@ -7,21 +7,22 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #2b2929;
+    background-color: #161a1d;
     min-height: 100vh;
+    animation: color 5s linear infinite;
 }
 
 .loader::before {
     content: "";
     position: absolute;
-    background: #2b2929;
+    background: #161a1d;
     inset: 20px 20px 0px 0;
     border-radius: 50%;
 }
 
 .loader {
     position: absolute;
-    background: linear-gradient(to top, #2b2929 40%, #dc143c);
+    background: linear-gradient(to top, #161a1d 40%, #f1c0e8);
     height: 300px;
     width: 300px;
     border-radius: 50%;
@@ -31,17 +32,23 @@ section {
 .loader::after {
     content: "";
     position: absolute;
-    background: #dc143c;
+    background: #f1c0e8;
     top: 130px;
     right: -20px;
     height: 60px;
     width: 60px;
     border-radius: 50%;
-    box-shadow: 0 0 5px #dc143c, 0 0 25px #dc143c, 0 0 50px #dc143c, 0 0 75px #dc143c;
+    box-shadow: 0 0 5px #f1c0e8, 0 0 25px #f1c0e8, 0 0 50px #f1c0e8, 0 0 75px #f1c0e8;
 }
 
 @keyframes rotate {
     to {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes color {
+    to {
+        filter: hue-rotate(360deg);
     }
 }
