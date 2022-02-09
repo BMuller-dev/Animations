@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2b2929;
+    height: 100vh;
+}
+
+.moon {
+    background: linear-gradient(to top, #2b2929 40%, crimson);
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
