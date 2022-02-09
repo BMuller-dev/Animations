@@ -1,19 +1,38 @@
-* {
-    margin: 0;
-    padding: 0;
+body {
+    background-color: #182027;
 }
 
-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #2b2929;
-    height: 100vh;
+.blood-moon {
+    position: relative;
+    margin: 290px auto 0 auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: linear-gradient(155deg, crimson, pink);
+    transition: all 15s;
 }
 
-.moon {
-    background: linear-gradient(to top, #2b2929 40%, crimson);
-    height: 300px;
-    width: 300px;
+.blood-moon:hover {
+    margin: 10px auto 0 auto;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.regular-moon {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background: white;
+    opacity: .1;
+    transition: all 15s;
+}
+
+.regular-moon:hover {
+    position: absolute;
+    opacity: .9;
+    height: 150px;
+    width: 150px;
     border-radius: 50%;
 }
